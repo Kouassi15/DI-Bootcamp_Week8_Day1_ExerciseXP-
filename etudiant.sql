@@ -5,6 +5,7 @@ CREATE DATABASE bootcamp;
 ---3 Add the following columns:
 CREATE TABLE students(id SERIAL, first_name VARCHAR(20) NOT NULL, last_name VARCHAR(25) NOT NULL, birth_date date );
  INSERT INTO students(first_name, last_name,birth_date) 
+ --- le formatage des date n'est pas bonne, il faut mettre les '' et utilise la fonction to_date()
        VALUES ('Yoan' ,'Cohen',03/12/2010),
        ('Lea', 'Benichou' , 27/07/1987),
        ('Amelia','Dux',	07/04/1996),
