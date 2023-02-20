@@ -5,11 +5,11 @@ CREATE DATABASE bootcamp;
 ---3 Add the following columns:
 CREATE TABLE students(id SERIAL, first_name VARCHAR(20) NOT NULL, last_name VARCHAR(25) NOT NULL, birth_date date );
  INSERT INTO students(first_name, last_name,birth_date) 
-       VALUES ('Yoan' ,'Cohen',to_date('03/12/2010')),
-       ('Lea', 'Benichou' ,to_date('27/07/1987')),
-       ('Amelia','Dux',	to_date('07/04/1996')),
-       ('David','Grez',	to_date('14/06/2003')),
-       ('Omer','Simpson',to_date('03/10/1980'));
+       VALUES ('Yoan' ,'Cohen',to_date('03/12/2010','DD/MM/YYYY')),
+       ('Lea', 'Benichou' ,to_date('27/07/1987','DD/MM/YYYY')),
+       ('Amelia','Dux',	to_date('07/04/1996','DD/MM/YYYY')),
+       ('David','Grez',	to_date('14/06/2003','DD/MM/YYYY')),
+       ('Omer','Simpson',to_date('03/10/1980','DD/MM/YYYY'));
 
 ---4 
 ---1 .Fetch all of the data from the table.
@@ -33,5 +33,5 @@ SELECT first_name FROM student WHERE first_name LIKE "%__a%";
 ---3-8.Fetch the students whose id’s are equal to 1 AND 3 
 SELECT first_name, last_names FROM student WHERE id IN (1,3);
 ---4 Fetch the students whose birth_dates are equal to or come after 1/01/2000. (show all their info).
-SELECT birth_day FROM student WHERE birth_date >= to_date('1/01/2000' );
+SELECT birth_day FROM student WHERE birth_date >= to_date('1/01/2000','DD/MM/YYYY' );
 
