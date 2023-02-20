@@ -3,7 +3,7 @@ CREATE DATABASE bootcamp;
 ---2 creation de la table
 --CREATE TABLE students;
 ---3 Add the following columns:
-CREATE TABLE students(id SERIAL, first_name VARCHAR(20) NOT NULL, last_name VARCHAR(25) NOT NULL, birth_date to_date );
+CREATE TABLE students(id SERIAL, first_name VARCHAR(20) NOT NULL, last_name VARCHAR(25) NOT NULL, birth_date date );
  INSERT INTO students(first_name, last_name,birth_date) 
        VALUES ('Yoan' ,'Cohen',to_date('03/12/2010')),
        ('Lea', 'Benichou' ,to_date('27/07/1987')),
