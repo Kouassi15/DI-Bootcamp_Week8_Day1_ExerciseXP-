@@ -9,7 +9,7 @@ CREATE TABLE students(id SERIAL, first_name VARCHAR(20) NOT NULL, last_name VARC
        ('Lea', 'Benichou' ,to_date('27/07/1987')),
        ('Amelia','Dux',	to_date('07/04/1996')),
        ('David','Grez',	to_date('14/06/2003')),
-       ('Omer' ,	'Simpson',to_date('03/10/1980'));
+       ('Omer','Simpson',to_date('03/10/1980'));
 
 ---4 
 ---1 .Fetch all of the data from the table.
